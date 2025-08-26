@@ -36,7 +36,7 @@ pyinstaller -F -w app/gui.py -n PrivAuditRedactor
 - `samples/`：示例文件
 - `tests/`：基础测试用例
 
-> 说明：本项目已留出大量可扩展接口与注释，便于补充规则库与插件，轻松扩展到 **5000+ 行**。
+。
 
 
 ## Manual authorship & review
