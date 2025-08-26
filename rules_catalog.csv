@@ -1,0 +1,522 @@
+name,regex,example,description
+email_generic,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}",user.test+100@example.com,Imported from previous huge_rules (no description).
+phone_cn_simple,\b1[3-9]\d{9}\b,13800138000,Imported from previous huge_rules (no description).
+phone_int_plus,"\+\d{1,3}[-\s]?\d{4,14}\b",+44-7700900900,Imported from previous huge_rules (no description).
+id_card_cn,\b\d{6}(19|20)\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\d|3[01])\d{3}[0-9Xx]\b,110101199003071234,Imported from previous huge_rules (no description).
+bank_card_13_19,"\b\d{12,19}\b",4532738771091795,Imported from previous huge_rules (no description).
+ipv4,"\b(?:\d{1,3}\.){3}\d{1,3}\b",192.168.0.1,Imported from previous huge_rules (no description).
+passport_cn_GE,\b[GE]\d{8}\b,G12345678,Imported from previous huge_rules (no description).
+ssn_us,\b\d{3}-\d{2}-\d{4}\b,123-45-6789,Imported from previous huge_rules (no description).
+plate_cn,"\b[京津沪渝冀豫云辽黑湘皖鲁新苏浙赣桂甘晋蒙陕吉闽贵粤青藏川宁琼][A-Z][A-Z0-9]{4,5}[A-Z0-9挂学警港澳]\b",京A12345,Imported from previous huge_rules (no description).
+url_http,https?://[^\s)]+,https://example.com/path?query=1,Imported from previous huge_rules (no description).
+uuid,\b[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\b,3fa85f64-5717-4562-b3fc-2c963f66afa6,Imported from previous huge_rules (no description).
+email_variation_1,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user1@sub.example.co,Imported from previous huge_rules (no description).
+mobile_space_2,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1002-1234,Imported from previous huge_rules (no description).
+token_base64_like_3,"[A-Za-z0-9_-]{20,300}",dGhpcy1pc19hLXRlc3Qtc3RyaW5nLXRvLW1hdGNo,Imported from previous huge_rules (no description).
+order_no_4,"\bORD[-_ ]?\d{6,12}\b",ORD-100004,Imported from previous huge_rules (no description).
+log_token_param_5,"token=[0-9a-zA-Z\-_.]{10,}",token=abc123DEF_456-xyz,Imported from previous huge_rules (no description).
+invoice_no_6,"\bINV[-_ ]?\d{6,12}\b",INV200006,Imported from previous huge_rules (no description).
+hex_32_7,\b[0-9a-fA-F]{32}\b,c1c91ff91315a7045891dba535fb8b0f,Imported from previous huge_rules (no description).
+uuid_nohyphen_8,\b[0-9a-fA-F]{32}\b,b5f90ac8fc4a4a983b2ca319ec6afe4e,Imported from previous huge_rules (no description).
+short_uuid_9,\b[0-9a-fA-F]{8}\b,98b6e4e7,Imported from previous huge_rules (no description).
+short_uuid_10,\b[0-9a-fA-F]{8}\b,1fd0594d,Imported from previous huge_rules (no description).
+email_variation_11,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user11@sub.example.co,Imported from previous huge_rules (no description).
+mobile_space_12,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1012-1234,Imported from previous huge_rules (no description).
+token_base64_like_13,"[A-Za-z0-9_-]{20,300}",dGhpcy1pc19hLXRlc3Qtc3RyaW5nLXRvLW1hdGNo,Imported from previous huge_rules (no description).
+order_no_14,"\bORD[-_ ]?\d{6,12}\b",ORD-100014,Imported from previous huge_rules (no description).
+log_token_param_15,"token=[0-9a-zA-Z\-_.]{10,}",token=abc123DEF_456-xyz,Imported from previous huge_rules (no description).
+invoice_no_16,"\bINV[-_ ]?\d{6,12}\b",INV200016,Imported from previous huge_rules (no description).
+hex_32_17,\b[0-9a-fA-F]{32}\b,e452231fa4e2ac7e2c12892ff118ad9e,Imported from previous huge_rules (no description).
+uuid_nohyphen_18,\b[0-9a-fA-F]{32}\b,eabd2f29ea43695e1b0e9362cdae545f,Imported from previous huge_rules (no description).
+short_uuid_19,\b[0-9a-fA-F]{8}\b,f5860f64,Imported from previous huge_rules (no description).
+short_uuid_20,\b[0-9a-fA-F]{8}\b,df8d6847,Imported from previous huge_rules (no description).
+email_variation_21,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user21@sub.example.co,Imported from previous huge_rules (no description).
+mobile_space_22,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1022-1234,Imported from previous huge_rules (no description).
+token_base64_like_23,"[A-Za-z0-9_-]{20,300}",dGhpcy1pc19hLXRlc3Qtc3RyaW5nLXRvLW1hdGNo,Imported from previous huge_rules (no description).
+order_no_24,"\bORD[-_ ]?\d{6,12}\b",ORD-100024,Imported from previous huge_rules (no description).
+log_token_param_25,"token=[0-9a-zA-Z\-_.]{10,}",token=abc123DEF_456-xyz,Imported from previous huge_rules (no description).
+invoice_no_26,"\bINV[-_ ]?\d{6,12}\b",INV200026,Imported from previous huge_rules (no description).
+hex_32_27,\b[0-9a-fA-F]{32}\b,5c22d153fadff29460cc24683b8c3aeb,Imported from previous huge_rules (no description).
+uuid_nohyphen_28,\b[0-9a-fA-F]{32}\b,f386e50840af800e207eeeb83d18b75c,Imported from previous huge_rules (no description).
+short_uuid_29,\b[0-9a-fA-F]{8}\b,bf323707,Imported from previous huge_rules (no description).
+short_uuid_30,\b[0-9a-fA-F]{8}\b,0efc9468,Imported from previous huge_rules (no description).
+email_variation_31,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user31@sub.example.co,Imported from previous huge_rules (no description).
+mobile_space_32,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1032-1234,Imported from previous huge_rules (no description).
+token_base64_like_33,"[A-Za-z0-9_-]{20,300}",dGhpcy1pc19hLXRlc3Qtc3RyaW5nLXRvLW1hdGNo,Imported from previous huge_rules (no description).
+order_no_34,"\bORD[-_ ]?\d{6,12}\b",ORD-100034,Imported from previous huge_rules (no description).
+log_token_param_35,"token=[0-9a-zA-Z\-_.]{10,}",token=abc123DEF_456-xyz,Imported from previous huge_rules (no description).
+invoice_no_36,"\bINV[-_ ]?\d{6,12}\b",INV200036,Imported from previous huge_rules (no description).
+hex_32_37,\b[0-9a-fA-F]{32}\b,9af613f67bf86b00d971ebcdde425bad,Imported from previous huge_rules (no description).
+uuid_nohyphen_38,\b[0-9a-fA-F]{32}\b,90e89732084ec1d97b445d61150c67b1,Imported from previous huge_rules (no description).
+short_uuid_39,\b[0-9a-fA-F]{8}\b,33c0cff6,Imported from previous huge_rules (no description).
+short_uuid_40,\b[0-9a-fA-F]{8}\b,476aafe0,Imported from previous huge_rules (no description).
+email_variation_41,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user41@sub.example.co,Imported from previous huge_rules (no description).
+mobile_space_42,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1042-1234,Imported from previous huge_rules (no description).
+token_base64_like_43,"[A-Za-z0-9_-]{20,300}",dGhpcy1pc19hLXRlc3Qtc3RyaW5nLXRvLW1hdGNo,Imported from previous huge_rules (no description).
+order_no_44,"\bORD[-_ ]?\d{6,12}\b",ORD-100044,Imported from previous huge_rules (no description).
+log_token_param_45,"token=[0-9a-zA-Z\-_.]{10,}",token=abc123DEF_456-xyz,Imported from previous huge_rules (no description).
+invoice_no_46,"\bINV[-_ ]?\d{6,12}\b",INV200046,Imported from previous huge_rules (no description).
+hex_32_47,\b[0-9a-fA-F]{32}\b,c4a6f84ae90d0592ce06b3dc62cda7a9,Imported from previous huge_rules (no description).
+uuid_nohyphen_48,\b[0-9a-fA-F]{32}\b,4168b18a0e2994869bd4fe346e859406,Imported from previous huge_rules (no description).
+short_uuid_49,\b[0-9a-fA-F]{8}\b,ac52abb1,Imported from previous huge_rules (no description).
+short_uuid_50,\b[0-9a-fA-F]{8}\b,8b328c21,Imported from previous huge_rules (no description).
+email_variation_51,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user51@sub.example.co,Imported from previous huge_rules (no description).
+mobile_space_52,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1052-1234,Imported from previous huge_rules (no description).
+token_base64_like_53,"[A-Za-z0-9_-]{20,300}",dGhpcy1pc19hLXRlc3Qtc3RyaW5nLXRvLW1hdGNo,Imported from previous huge_rules (no description).
+order_no_54,"\bORD[-_ ]?\d{6,12}\b",ORD-100054,Imported from previous huge_rules (no description).
+log_token_param_55,"token=[0-9a-zA-Z\-_.]{10,}",token=abc123DEF_456-xyz,Imported from previous huge_rules (no description).
+invoice_no_56,"\bINV[-_ ]?\d{6,12}\b",INV200056,Imported from previous huge_rules (no description).
+hex_32_57,\b[0-9a-fA-F]{32}\b,309abd446c424db63551221697d4035d,Imported from previous huge_rules (no description).
+uuid_nohyphen_58,\b[0-9a-fA-F]{32}\b,4367add8acb34e4567ba9daedb681d83,Imported from previous huge_rules (no description).
+short_uuid_59,\b[0-9a-fA-F]{8}\b,33afccd6,Imported from previous huge_rules (no description).
+short_uuid_60,\b[0-9a-fA-F]{8}\b,d01e511c,Imported from previous huge_rules (no description).
+email_variation_61,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user61@sub.example.co,Imported from previous huge_rules (no description).
+mobile_space_62,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1062-1234,Imported from previous huge_rules (no description).
+token_base64_like_63,"[A-Za-z0-9_-]{20,300}",dGhpcy1pc19hLXRlc3Qtc3RyaW5nLXRvLW1hdGNo,Imported from previous huge_rules (no description).
+order_no_64,"\bORD[-_ ]?\d{6,12}\b",ORD-100064,Imported from previous huge_rules (no description).
+log_token_param_65,"token=[0-9a-zA-Z\-_.]{10,}",token=abc123DEF_456-xyz,Imported from previous huge_rules (no description).
+invoice_no_66,"\bINV[-_ ]?\d{6,12}\b",INV200066,Imported from previous huge_rules (no description).
+hex_32_67,\b[0-9a-fA-F]{32}\b,dbd1536ac48e2cf2ce5e2792ba340d4c,Imported from previous huge_rules (no description).
+uuid_nohyphen_68,\b[0-9a-fA-F]{32}\b,d0ba764812735fbc9ade60d1366c2597,Imported from previous huge_rules (no description).
+short_uuid_69,\b[0-9a-fA-F]{8}\b,3bae847f,Imported from previous huge_rules (no description).
+short_uuid_70,\b[0-9a-fA-F]{8}\b,b2298b7a,Imported from previous huge_rules (no description).
+email_variation_71,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user71@sub.example.co,Imported from previous huge_rules (no description).
+mobile_space_72,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1072-1234,Imported from previous huge_rules (no description).
+token_base64_like_73,"[A-Za-z0-9_-]{20,300}",dGhpcy1pc19hLXRlc3Qtc3RyaW5nLXRvLW1hdGNo,Imported from previous huge_rules (no description).
+order_no_74,"\bORD[-_ ]?\d{6,12}\b",ORD-100074,Imported from previous huge_rules (no description).
+log_token_param_75,"token=[0-9a-zA-Z\-_.]{10,}",token=abc123DEF_456-xyz,Imported from previous huge_rules (no description).
+invoice_no_76,"\bINV[-_ ]?\d{6,12}\b",INV200076,Imported from previous huge_rules (no description).
+hex_32_77,\b[0-9a-fA-F]{32}\b,b2cff5f8edfcb19e3c482ee88326084d,Imported from previous huge_rules (no description).
+uuid_nohyphen_78,\b[0-9a-fA-F]{32}\b,a53b31e50b1f0afbed0f3571ec789f2a,Imported from previous huge_rules (no description).
+short_uuid_79,\b[0-9a-fA-F]{8}\b,a339d8d1,Imported from previous huge_rules (no description).
+short_uuid_80,\b[0-9a-fA-F]{8}\b,1eadda4f,Imported from previous huge_rules (no description).
+email_variation_81,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user81@sub.example.co,Imported from previous huge_rules (no description).
+mobile_space_82,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1082-1234,Imported from previous huge_rules (no description).
+token_base64_like_83,"[A-Za-z0-9_-]{20,300}",dGhpcy1pc19hLXRlc3Qtc3RyaW5nLXRvLW1hdGNo,Imported from previous huge_rules (no description).
+order_no_84,"\bORD[-_ ]?\d{6,12}\b",ORD-100084,Imported from previous huge_rules (no description).
+log_token_param_85,"token=[0-9a-zA-Z\-_.]{10,}",token=abc123DEF_456-xyz,Imported from previous huge_rules (no description).
+invoice_no_86,"\bINV[-_ ]?\d{6,12}\b",INV200086,Imported from previous huge_rules (no description).
+hex_32_87,\b[0-9a-fA-F]{32}\b,0873081faff94ee43a295d692d13713e,Imported from previous huge_rules (no description).
+uuid_nohyphen_88,\b[0-9a-fA-F]{32}\b,9efc3da457a8e2f1a836d8bf422e0b28,Imported from previous huge_rules (no description).
+short_uuid_89,\b[0-9a-fA-F]{8}\b,a3065a87,Imported from previous huge_rules (no description).
+short_uuid_90,\b[0-9a-fA-F]{8}\b,c0a8683d,Imported from previous huge_rules (no description).
+email_variation_91,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user91@sub.example.co,Imported from previous huge_rules (no description).
+mobile_space_92,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1092-1234,Imported from previous huge_rules (no description).
+token_base64_like_93,"[A-Za-z0-9_-]{20,300}",dGhpcy1pc19hLXRlc3Qtc3RyaW5nLXRvLW1hdGNo,Imported from previous huge_rules (no description).
+order_no_94,"\bORD[-_ ]?\d{6,12}\b",ORD-100094,Imported from previous huge_rules (no description).
+log_token_param_95,"token=[0-9a-zA-Z\-_.]{10,}",token=abc123DEF_456-xyz,Imported from previous huge_rules (no description).
+invoice_no_96,"\bINV[-_ ]?\d{6,12}\b",INV200096,Imported from previous huge_rules (no description).
+hex_32_97,\b[0-9a-fA-F]{32}\b,f6c0acde5d7e483c81a40ec2b5988388,Imported from previous huge_rules (no description).
+uuid_nohyphen_98,\b[0-9a-fA-F]{32}\b,8ef71eae0de69a4859b4d7e5e0925f74,Imported from previous huge_rules (no description).
+short_uuid_99,\b[0-9a-fA-F]{8}\b,408aa86d,Imported from previous huge_rules (no description).
+short_uuid_100,\b[0-9a-fA-F]{8}\b,e4bb3b1b,Imported from previous huge_rules (no description).
+email_variation_101,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user101@sub.example.co,Imported from previous huge_rules (no description).
+mobile_space_102,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1102-1234,Imported from previous huge_rules (no description).
+token_base64_like_103,"[A-Za-z0-9_-]{20,300}",dGhpcy1pc19hLXRlc3Qtc3RyaW5nLXRvLW1hdGNo,Imported from previous huge_rules (no description).
+order_no_104,"\bORD[-_ ]?\d{6,12}\b",ORD-100104,Imported from previous huge_rules (no description).
+log_token_param_105,"token=[0-9a-zA-Z\-_.]{10,}",token=abc123DEF_456-xyz,Imported from previous huge_rules (no description).
+invoice_no_106,"\bINV[-_ ]?\d{6,12}\b",INV200106,Imported from previous huge_rules (no description).
+hex_32_107,\b[0-9a-fA-F]{32}\b,4748ad847692fb1cf43cf03e3cfc3c9f,Imported from previous huge_rules (no description).
+uuid_nohyphen_108,\b[0-9a-fA-F]{32}\b,d6db8b7528bce102a9f7515539d1bbe9,Imported from previous huge_rules (no description).
+short_uuid_109,\b[0-9a-fA-F]{8}\b,70db7b1c,Imported from previous huge_rules (no description).
+short_uuid_110,\b[0-9a-fA-F]{8}\b,3aab15a4,Imported from previous huge_rules (no description).
+email_variation_111,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user111@sub.example.co,Imported from previous huge_rules (no description).
+mobile_space_112,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1112-1234,Imported from previous huge_rules (no description).
+token_base64_like_113,"[A-Za-z0-9_-]{20,300}",dGhpcy1pc19hLXRlc3Qtc3RyaW5nLXRvLW1hdGNo,Imported from previous huge_rules (no description).
+order_no_114,"\bORD[-_ ]?\d{6,12}\b",ORD-100114,Imported from previous huge_rules (no description).
+log_token_param_115,"token=[0-9a-zA-Z\-_.]{10,}",token=abc123DEF_456-xyz,Imported from previous huge_rules (no description).
+invoice_no_116,"\bINV[-_ ]?\d{6,12}\b",INV200116,Imported from previous huge_rules (no description).
+hex_32_117,\b[0-9a-fA-F]{32}\b,ae9fd3ede437f079d1a5d84662a52859,Imported from previous huge_rules (no description).
+uuid_nohyphen_118,\b[0-9a-fA-F]{32}\b,158c9f46202dde71225c4a5c7cf95619,Imported from previous huge_rules (no description).
+short_uuid_119,\b[0-9a-fA-F]{8}\b,043b225e,Imported from previous huge_rules (no description).
+short_uuid_120,\b[0-9a-fA-F]{8}\b,63e4efcc,Imported from previous huge_rules (no description).
+email_variation_121,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user121@sub.example.co,Imported from previous huge_rules (no description).
+mobile_space_122,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1122-1234,Imported from previous huge_rules (no description).
+token_base64_like_123,"[A-Za-z0-9_-]{20,300}",dGhpcy1pc19hLXRlc3Qtc3RyaW5nLXRvLW1hdGNo,Imported from previous huge_rules (no description).
+order_no_124,"\bORD[-_ ]?\d{6,12}\b",ORD-100124,Imported from previous huge_rules (no description).
+log_token_param_125,"token=[0-9a-zA-Z\-_.]{10,}",token=abc123DEF_456-xyz,Imported from previous huge_rules (no description).
+invoice_no_126,"\bINV[-_ ]?\d{6,12}\b",INV200126,Imported from previous huge_rules (no description).
+hex_32_127,\b[0-9a-fA-F]{32}\b,2e14cf5f68725da26d7e737a49044509,Imported from previous huge_rules (no description).
+uuid_nohyphen_128,\b[0-9a-fA-F]{32}\b,b899baed52b66a96385a5c07800fb1f3,Imported from previous huge_rules (no description).
+short_uuid_129,\b[0-9a-fA-F]{8}\b,9aa7fb54,Imported from previous huge_rules (no description).
+short_uuid_130,\b[0-9a-fA-F]{8}\b,6d02275d,Imported from previous huge_rules (no description).
+email_variation_131,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user131@sub.example.co,Imported from previous huge_rules (no description).
+mobile_space_132,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1132-1234,Imported from previous huge_rules (no description).
+token_base64_like_133,"[A-Za-z0-9_-]{20,300}",dGhpcy1pc19hLXRlc3Qtc3RyaW5nLXRvLW1hdGNo,Imported from previous huge_rules (no description).
+order_no_134,"\bORD[-_ ]?\d{6,12}\b",ORD-100134,Imported from previous huge_rules (no description).
+log_token_param_135,"token=[0-9a-zA-Z\-_.]{10,}",token=abc123DEF_456-xyz,Imported from previous huge_rules (no description).
+invoice_no_136,"\bINV[-_ ]?\d{6,12}\b",INV200136,Imported from previous huge_rules (no description).
+hex_32_137,\b[0-9a-fA-F]{32}\b,a9820fb33628610a38b3bc7dabc31299,Imported from previous huge_rules (no description).
+uuid_nohyphen_138,\b[0-9a-fA-F]{32}\b,495abee42d0d75104a215d7dbc900dc7,Imported from previous huge_rules (no description).
+short_uuid_139,\b[0-9a-fA-F]{8}\b,5db0e4c1,Imported from previous huge_rules (no description).
+short_uuid_140,\b[0-9a-fA-F]{8}\b,4dfa331b,Imported from previous huge_rules (no description).
+email_variation_141,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user141@sub.example.co,Imported from previous huge_rules (no description).
+mobile_space_142,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1142-1234,Imported from previous huge_rules (no description).
+token_base64_like_143,"[A-Za-z0-9_-]{20,300}",dGhpcy1pc19hLXRlc3Qtc3RyaW5nLXRvLW1hdGNo,Imported from previous huge_rules (no description).
+order_no_144,"\bORD[-_ ]?\d{6,12}\b",ORD-100144,Imported from previous huge_rules (no description).
+log_token_param_145,"token=[0-9a-zA-Z\-_.]{10,}",token=abc123DEF_456-xyz,Imported from previous huge_rules (no description).
+invoice_no_146,"\bINV[-_ ]?\d{6,12}\b",INV200146,Imported from previous huge_rules (no description).
+hex_32_147,\b[0-9a-fA-F]{32}\b,19567b7682dfdfdda7aaf17360877acd,Imported from previous huge_rules (no description).
+uuid_nohyphen_148,\b[0-9a-fA-F]{32}\b,b6f6659a034c322335b9dad5d5262d3d,Imported from previous huge_rules (no description).
+short_uuid_149,\b[0-9a-fA-F]{8}\b,d71e8535,Imported from previous huge_rules (no description).
+short_uuid_150,\b[0-9a-fA-F]{8}\b,b493d8fa,Imported from previous huge_rules (no description).
+email_variation_151,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user151@sub.example.co,Imported from previous huge_rules (no description).
+mobile_space_152,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1152-1234,Imported from previous huge_rules (no description).
+token_base64_like_153,"[A-Za-z0-9_-]{20,300}",dGhpcy1pc19hLXRlc3Qtc3RyaW5nLXRvLW1hdGNo,Imported from previous huge_rules (no description).
+order_no_154,"\bORD[-_ ]?\d{6,12}\b",ORD-100154,Imported from previous huge_rules (no description).
+log_token_param_155,"token=[0-9a-zA-Z\-_.]{10,}",token=abc123DEF_456-xyz,Imported from previous huge_rules (no description).
+invoice_no_156,"\bINV[-_ ]?\d{6,12}\b",INV200156,Imported from previous huge_rules (no description).
+hex_32_157,\b[0-9a-fA-F]{32}\b,a504ea4659b0186356623b57c6a8bb90,Imported from previous huge_rules (no description).
+uuid_nohyphen_158,\b[0-9a-fA-F]{32}\b,f2e47754071da9f8330104c956ac6b18,Imported from previous huge_rules (no description).
+short_uuid_159,\b[0-9a-fA-F]{8}\b,577b8e0e,Imported from previous huge_rules (no description).
+short_uuid_160,\b[0-9a-fA-F]{8}\b,c75c8386,Imported from previous huge_rules (no description).
+iban_simple,"\b[A-Z]{2}\d{2}[A-Z0-9]{4,30}\b",GB29NWBK60161331926819,Imported from previous huge_rules (no description).
+swift_bic,\b[A-Z]{6}[A-Z0-9]{2}([A-Z0-9]{3})?\b,NWBKGB2L,Imported from previous huge_rules (no description).
+visa_card,\b4[0-9]{12}(?:[0-9]{3})?\b,4111111111111111,Imported from previous huge_rules (no description).
+mastercard,\b5[1-5][0-9]{14}\b,5500000000000004,Imported from previous huge_rules (no description).
+amex,\b3[47][0-9]{13}\b,340000000000009,Imported from previous huge_rules (no description).
+diners,\b3(?:0[0-5]|[68][0-9])[0-9]{11}\b,30569309025904,Imported from previous huge_rules (no description).
+discover,\b6(?:011|5[0-9]{2})[0-9]{12}\b,6011111111111117,Imported from previous huge_rules (no description).
+mac_addr,\b(?:[0-9A-Fa-f]{2}:){5}[0-9A-Fa-f]{2}\b,00:1A:2B:3C:4D:5E,Imported from previous huge_rules (no description).
+lat_lon,"\b-?\d{1,3}\.\d+,\s*-?\d{1,3}\.\d+\b","37.7749,-122.4194",Imported from previous huge_rules (no description).
+datetime_iso,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-01T12:00:00Z,Imported from previous huge_rules (no description).
+date_ymd,\b\d{4}-\d{2}-\d{2}\b,2020-01-15,Imported from previous huge_rules (no description).
+time_hms,\b\d{2}:\d{2}:\d{2}\b,14:23:01,Imported from previous huge_rules (no description).
+ipv6,"\b(?:[0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}\b",2001:0db8:85a3:0000:0000:8a2e:0370:7334,Imported from previous huge_rules (no description).
+mqtt_clientid,"\bclientId=[A-Za-z0-9_-]{1,64}\b",clientId=my-device-01,Imported from previous huge_rules (no description).
+jwt_like,"[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}",eyJhbGciOiJIUzI1NiIsInR...,Imported from previous huge_rules (no description).
+vin,\b[0-9A-HJ-NPR-Z]{17}\b,1HGCM82633A004352,Imported from previous huge_rules (no description).
+passport_generic,\b[A-PR-WY][1-9]\d\s?\d{4}[1-9]\b,P1234567,Imported from previous huge_rules (no description).
+cn_bank_name,(中国银行|工商银行|建设银行|农业银行|招商银行),工商银行,Imported from previous huge_rules (no description).
+cn_address_short,"(市|省|区|县|路|街|号)\d{1,4}",朝阳区100号,Imported from previous huge_rules (no description).
+cn_name_simple,"[\u4e00-\u9fff]{2,4}",张三丰,Imported from previous huge_rules (no description).
+employee_id,"\bEID[-_]?\d{3,8}\b",EID-000123,Imported from previous huge_rules (no description).
+student_id,"\bS\d{6,10}\b",S20230001,Imported from previous huge_rules (no description).
+tracking_cn,"\b\d{14,16}\b",12345678901234,Imported from previous huge_rules (no description).
+container_no,\b[A-Z]{4}\d{7}\b,MSCU1234567,Imported from previous huge_rules (no description).
+us_phone_paren,\(\d{3}\)\s*\d{3}-\d{4},(415) 555-2671,Imported from previous huge_rules (no description).
+generic_seq_197,"\bTOKEN197[A-Z]{3,6}\b",TOKEN197XYZ,Imported from previous huge_rules (no description).
+generic_seq_198,"\bREF198[: ]\d{2,6}\b",REF198: 55,Imported from previous huge_rules (no description).
+generic_seq_199,"\bCODE199[:\-]?\d{4,8}\b",CODE199-1234,Imported from previous huge_rules (no description).
+generic_seq_200,"\bTOKEN200[A-Z]{3,6}\b",TOKEN200XYZ,Imported from previous huge_rules (no description).
+generic_seq_201,"\bREF201[: ]\d{2,6}\b",REF201: 55,Imported from previous huge_rules (no description).
+generic_seq_202,"\bCODE202[:\-]?\d{4,8}\b",CODE202-1234,Imported from previous huge_rules (no description).
+generic_seq_203,"\bTOKEN203[A-Z]{3,6}\b",TOKEN203XYZ,Imported from previous huge_rules (no description).
+generic_seq_204,"\bREF204[: ]\d{2,6}\b",REF204: 55,Imported from previous huge_rules (no description).
+generic_seq_205,"\bCODE205[:\-]?\d{4,8}\b",CODE205-1234,Imported from previous huge_rules (no description).
+generic_seq_206,"\bTOKEN206[A-Z]{3,6}\b",TOKEN206XYZ,Imported from previous huge_rules (no description).
+generic_seq_207,"\bREF207[: ]\d{2,6}\b",REF207: 55,Imported from previous huge_rules (no description).
+generic_seq_208,"\bCODE208[:\-]?\d{4,8}\b",CODE208-1234,Imported from previous huge_rules (no description).
+generic_seq_209,"\bTOKEN209[A-Z]{3,6}\b",TOKEN209XYZ,Imported from previous huge_rules (no description).
+generic_seq_210,"\bREF210[: ]\d{2,6}\b",REF210: 55,Imported from previous huge_rules (no description).
+generic_seq_211,"\bCODE211[:\-]?\d{4,8}\b",CODE211-1234,Imported from previous huge_rules (no description).
+generic_seq_212,"\bTOKEN212[A-Z]{3,6}\b",TOKEN212XYZ,Imported from previous huge_rules (no description).
+generic_seq_213,"\bREF213[: ]\d{2,6}\b",REF213: 55,Imported from previous huge_rules (no description).
+generic_seq_214,"\bCODE214[:\-]?\d{4,8}\b",CODE214-1234,Imported from previous huge_rules (no description).
+generic_seq_215,"\bTOKEN215[A-Z]{3,6}\b",TOKEN215XYZ,Imported from previous huge_rules (no description).
+generic_seq_216,"\bREF216[: ]\d{2,6}\b",REF216: 55,Imported from previous huge_rules (no description).
+generic_seq_217,"\bCODE217[:\-]?\d{4,8}\b",CODE217-1234,Imported from previous huge_rules (no description).
+generic_seq_218,"\bTOKEN218[A-Z]{3,6}\b",TOKEN218XYZ,Imported from previous huge_rules (no description).
+generic_seq_219,"\bREF219[: ]\d{2,6}\b",REF219: 55,Imported from previous huge_rules (no description).
+generic_seq_220,"\bCODE220[:\-]?\d{4,8}\b",CODE220-1234,Imported from previous huge_rules (no description).
+mobile_dash_221,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1221-1234,中国大陆手机号带短横分隔
+token_base64_222,"[A-Za-z0-9_-]{20,300}",d38660e7cc7ad2353fb7387bead5dfccbcbe,看起来像长令牌/密钥的字母数字串
+order_no_223,"\bORD[-_ ]?\d{6,12}\b",ORD-100223,订单号（ORD 前缀）
+invoice_no_224,"\bINV[-_ ]?\d{6,12}\b",INV200224,发票号码（INV 前缀）
+hex_32_225,\b[0-9a-fA-F]{32}\b,6132198f056f5b54fa407dfd1c7be26d,32 字符十六进制散列（MD5-like）
+uuid_compact_226,\b[0-9a-fA-F]{32}\b,dc76369604cfbafaf6612b20b9d98b72,无横线 UUID 表示
+short_hex_227,\b[0-9a-fA-F]{8}\b,80ffa70c,短 8 字节十六进制标识
+ipv4_228,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.228.174,IPv4 地址
+datetime_iso_229,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-06T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_230,"\bCODE230[:\-]?\d{4,8}\b",CODE230-1234,通用序列号样式
+email_variation_231,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user231@example.co,一般邮箱格式（短域）
+mobile_dash_232,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1232-1234,中国大陆手机号带短横分隔
+token_base64_233,"[A-Za-z0-9_-]{20,300}",2a79646528dcca9d43759eb60b33d584e165,看起来像长令牌/密钥的字母数字串
+order_no_234,"\bORD[-_ ]?\d{6,12}\b",ORD-100234,订单号（ORD 前缀）
+invoice_no_235,"\bINV[-_ ]?\d{6,12}\b",INV200235,发票号码（INV 前缀）
+hex_32_236,\b[0-9a-fA-F]{32}\b,f1db0527a8262acbb826c8dc1ebedc0b,32 字符十六进制散列（MD5-like）
+uuid_compact_237,\b[0-9a-fA-F]{32}\b,385b3cfb7a16ccf22bbcb54774278059,无横线 UUID 表示
+short_hex_238,\b[0-9a-fA-F]{8}\b,9c84abe0,短 8 字节十六进制标识
+ipv4_239,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.239.207,IPv4 地址
+datetime_iso_240,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-17T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_241,"\bCODE241[:\-]?\d{4,8}\b",CODE241-1234,通用序列号样式
+email_variation_242,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user242@example.co,一般邮箱格式（短域）
+mobile_dash_243,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1243-1234,中国大陆手机号带短横分隔
+token_base64_244,"[A-Za-z0-9_-]{20,300}",9dac1d295df536cf655956ef58ef34649188,看起来像长令牌/密钥的字母数字串
+order_no_245,"\bORD[-_ ]?\d{6,12}\b",ORD-100245,订单号（ORD 前缀）
+invoice_no_246,"\bINV[-_ ]?\d{6,12}\b",INV200246,发票号码（INV 前缀）
+hex_32_247,\b[0-9a-fA-F]{32}\b,ef1b7187d67efa8d420667453b1f4989,32 字符十六进制散列（MD5-like）
+uuid_compact_248,\b[0-9a-fA-F]{32}\b,281e4d4fec8651c6745f0b27bb19b6eb,无横线 UUID 表示
+short_hex_249,\b[0-9a-fA-F]{8}\b,4682f9f4,短 8 字节十六进制标识
+ipv4_250,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.250.240,IPv4 地址
+datetime_iso_251,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-28T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_252,"\bCODE252[:\-]?\d{4,8}\b",CODE252-1234,通用序列号样式
+email_variation_253,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user253@example.co,一般邮箱格式（短域）
+mobile_dash_254,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1254-1234,中国大陆手机号带短横分隔
+token_base64_255,"[A-Za-z0-9_-]{20,300}",ccd1e3419b44ff6ec87acfe7b954ade9fe13,看起来像长令牌/密钥的字母数字串
+order_no_256,"\bORD[-_ ]?\d{6,12}\b",ORD-100256,订单号（ORD 前缀）
+invoice_no_257,"\bINV[-_ ]?\d{6,12}\b",INV200257,发票号码（INV 前缀）
+hex_32_258,\b[0-9a-fA-F]{32}\b,e6fb93f8ed11f4470a2ebfa87c4be7da,32 字符十六进制散列（MD5-like）
+uuid_compact_259,\b[0-9a-fA-F]{32}\b,295ac659ae8b3d2036aa21bbadba83e7,无横线 UUID 表示
+short_hex_260,\b[0-9a-fA-F]{8}\b,72042383,短 8 字节十六进制标识
+ipv4_261,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.6.18,IPv4 地址
+datetime_iso_262,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-11T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_263,"\bCODE263[:\-]?\d{4,8}\b",CODE263-1234,通用序列号样式
+email_variation_264,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user264@example.co,一般邮箱格式（短域）
+mobile_dash_265,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1265-1234,中国大陆手机号带短横分隔
+token_base64_266,"[A-Za-z0-9_-]{20,300}",f0d14a99068655529de75745b312c0eaf766,看起来像长令牌/密钥的字母数字串
+order_no_267,"\bORD[-_ ]?\d{6,12}\b",ORD-100267,订单号（ORD 前缀）
+invoice_no_268,"\bINV[-_ ]?\d{6,12}\b",INV200268,发票号码（INV 前缀）
+hex_32_269,\b[0-9a-fA-F]{32}\b,a2cb7cb435e8972aef72811e60a05c4c,32 字符十六进制散列（MD5-like）
+uuid_compact_270,\b[0-9a-fA-F]{32}\b,da1e6919d8880e3cf65c4882de1b3ed1,无横线 UUID 表示
+short_hex_271,\b[0-9a-fA-F]{8}\b,a0bb74fb,短 8 字节十六进制标识
+ipv4_272,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.17.51,IPv4 地址
+datetime_iso_273,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-22T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_274,"\bCODE274[:\-]?\d{4,8}\b",CODE274-1234,通用序列号样式
+email_variation_275,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user275@example.co,一般邮箱格式（短域）
+mobile_dash_276,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1276-1234,中国大陆手机号带短横分隔
+token_base64_277,"[A-Za-z0-9_-]{20,300}",a61d4d781f5b70db7cc24b078ae7d69820f0,看起来像长令牌/密钥的字母数字串
+order_no_278,"\bORD[-_ ]?\d{6,12}\b",ORD-100278,订单号（ORD 前缀）
+invoice_no_279,"\bINV[-_ ]?\d{6,12}\b",INV200279,发票号码（INV 前缀）
+hex_32_280,\b[0-9a-fA-F]{32}\b,62b32ed27b1837ee4ce98c1b466a2ba1,32 字符十六进制散列（MD5-like）
+uuid_compact_281,\b[0-9a-fA-F]{32}\b,9a501f2e4f65c7d8c511d59d5d10efea,无横线 UUID 表示
+short_hex_282,\b[0-9a-fA-F]{8}\b,1baaa450,短 8 字节十六进制标识
+ipv4_283,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.28.84,IPv4 地址
+datetime_iso_284,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-05T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_285,"\bCODE285[:\-]?\d{4,8}\b",CODE285-1234,通用序列号样式
+email_variation_286,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user286@example.co,一般邮箱格式（短域）
+mobile_dash_287,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1287-1234,中国大陆手机号带短横分隔
+token_base64_288,"[A-Za-z0-9_-]{20,300}",71ad6ec82554a9e522234046d55c857348ae,看起来像长令牌/密钥的字母数字串
+order_no_289,"\bORD[-_ ]?\d{6,12}\b",ORD-100289,订单号（ORD 前缀）
+invoice_no_290,"\bINV[-_ ]?\d{6,12}\b",INV200290,发票号码（INV 前缀）
+hex_32_291,\b[0-9a-fA-F]{32}\b,c1b76b6c983c0ef01933a8c9a2fd59f3,32 字符十六进制散列（MD5-like）
+uuid_compact_292,\b[0-9a-fA-F]{32}\b,78fa96714f79646bf12bb6e28c2d33f1,无横线 UUID 表示
+short_hex_293,\b[0-9a-fA-F]{8}\b,46bbfbf4,短 8 字节十六进制标识
+ipv4_294,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.39.117,IPv4 地址
+datetime_iso_295,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-16T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_296,"\bCODE296[:\-]?\d{4,8}\b",CODE296-1234,通用序列号样式
+email_variation_297,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user297@example.co,一般邮箱格式（短域）
+mobile_dash_298,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1298-1234,中国大陆手机号带短横分隔
+token_base64_299,"[A-Za-z0-9_-]{20,300}",d06b14925e7bde2c47a044ac028ac742ef0d,看起来像长令牌/密钥的字母数字串
+order_no_300,"\bORD[-_ ]?\d{6,12}\b",ORD-100300,订单号（ORD 前缀）
+invoice_no_301,"\bINV[-_ ]?\d{6,12}\b",INV200301,发票号码（INV 前缀）
+hex_32_302,\b[0-9a-fA-F]{32}\b,fc6f036ce49059758c348000a8faeba9,32 字符十六进制散列（MD5-like）
+uuid_compact_303,\b[0-9a-fA-F]{32}\b,0b0a52624fb64f5dc10dc662fe17691b,无横线 UUID 表示
+short_hex_304,\b[0-9a-fA-F]{8}\b,0b6baa02,短 8 字节十六进制标识
+ipv4_305,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.50.150,IPv4 地址
+datetime_iso_306,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-27T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_307,"\bCODE307[:\-]?\d{4,8}\b",CODE307-1234,通用序列号样式
+email_variation_308,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user308@example.co,一般邮箱格式（短域）
+mobile_dash_309,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1309-1234,中国大陆手机号带短横分隔
+token_base64_310,"[A-Za-z0-9_-]{20,300}",993f7638449ebddaba6fc23760bec77a06eb,看起来像长令牌/密钥的字母数字串
+order_no_311,"\bORD[-_ ]?\d{6,12}\b",ORD-100311,订单号（ORD 前缀）
+invoice_no_312,"\bINV[-_ ]?\d{6,12}\b",INV200312,发票号码（INV 前缀）
+hex_32_313,\b[0-9a-fA-F]{32}\b,56108a7369f669ea4f965a48951043b3,32 字符十六进制散列（MD5-like）
+uuid_compact_314,\b[0-9a-fA-F]{32}\b,a8a5853ac6d9daf327f488b5ef21bbb2,无横线 UUID 表示
+short_hex_315,\b[0-9a-fA-F]{8}\b,7a24cd69,短 8 字节十六进制标识
+ipv4_316,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.61.183,IPv4 地址
+datetime_iso_317,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-10T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_318,"\bCODE318[:\-]?\d{4,8}\b",CODE318-1234,通用序列号样式
+email_variation_319,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user319@example.co,一般邮箱格式（短域）
+mobile_dash_320,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1320-1234,中国大陆手机号带短横分隔
+token_base64_321,"[A-Za-z0-9_-]{20,300}",d825afecff6a0932a3af7d7e79c35081caf1,看起来像长令牌/密钥的字母数字串
+order_no_322,"\bORD[-_ ]?\d{6,12}\b",ORD-100322,订单号（ORD 前缀）
+invoice_no_323,"\bINV[-_ ]?\d{6,12}\b",INV200323,发票号码（INV 前缀）
+hex_32_324,\b[0-9a-fA-F]{32}\b,c420292ce755023661768e9cc773afa4,32 字符十六进制散列（MD5-like）
+uuid_compact_325,\b[0-9a-fA-F]{32}\b,29e276eabb93d22dddc6aef6b3062dd1,无横线 UUID 表示
+short_hex_326,\b[0-9a-fA-F]{8}\b,7b73ef60,短 8 字节十六进制标识
+ipv4_327,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.72.216,IPv4 地址
+datetime_iso_328,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-21T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_329,"\bCODE329[:\-]?\d{4,8}\b",CODE329-1234,通用序列号样式
+email_variation_330,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user330@example.co,一般邮箱格式（短域）
+mobile_dash_331,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1331-1234,中国大陆手机号带短横分隔
+token_base64_332,"[A-Za-z0-9_-]{20,300}",23562cbb49d76b6248822ee78dcf2a8ec042,看起来像长令牌/密钥的字母数字串
+order_no_333,"\bORD[-_ ]?\d{6,12}\b",ORD-100333,订单号（ORD 前缀）
+invoice_no_334,"\bINV[-_ ]?\d{6,12}\b",INV200334,发票号码（INV 前缀）
+hex_32_335,\b[0-9a-fA-F]{32}\b,cb90bab8efbca12705a510ee8e486afb,32 字符十六进制散列（MD5-like）
+uuid_compact_336,\b[0-9a-fA-F]{32}\b,dddffc3de67b5c23406201715a29ee26,无横线 UUID 表示
+short_hex_337,\b[0-9a-fA-F]{8}\b,1befbcdb,短 8 字节十六进制标识
+ipv4_338,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.83.249,IPv4 地址
+datetime_iso_339,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-04T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_340,"\bCODE340[:\-]?\d{4,8}\b",CODE340-1234,通用序列号样式
+email_variation_341,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user341@example.co,一般邮箱格式（短域）
+mobile_dash_342,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1342-1234,中国大陆手机号带短横分隔
+token_base64_343,"[A-Za-z0-9_-]{20,300}",b30d120dc416e42bec657c9da35f58a43ad7,看起来像长令牌/密钥的字母数字串
+order_no_344,"\bORD[-_ ]?\d{6,12}\b",ORD-100344,订单号（ORD 前缀）
+invoice_no_345,"\bINV[-_ ]?\d{6,12}\b",INV200345,发票号码（INV 前缀）
+hex_32_346,\b[0-9a-fA-F]{32}\b,0624bc901152f43fec7312e4e1d95ebd,32 字符十六进制散列（MD5-like）
+uuid_compact_347,\b[0-9a-fA-F]{32}\b,b8c0ed1a57260a3ccf429e4386711857,无横线 UUID 表示
+short_hex_348,\b[0-9a-fA-F]{8}\b,913967c0,短 8 字节十六进制标识
+ipv4_349,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.94.27,IPv4 地址
+datetime_iso_350,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-15T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_351,"\bCODE351[:\-]?\d{4,8}\b",CODE351-1234,通用序列号样式
+email_variation_352,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user352@example.co,一般邮箱格式（短域）
+mobile_dash_353,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1353-1234,中国大陆手机号带短横分隔
+token_base64_354,"[A-Za-z0-9_-]{20,300}",e5cded04f71d74eb4050cff4ba3d7c0a8dd4,看起来像长令牌/密钥的字母数字串
+order_no_355,"\bORD[-_ ]?\d{6,12}\b",ORD-100355,订单号（ORD 前缀）
+invoice_no_356,"\bINV[-_ ]?\d{6,12}\b",INV200356,发票号码（INV 前缀）
+hex_32_357,\b[0-9a-fA-F]{32}\b,27cb6a0962fb3f0920680f12cbddb13e,32 字符十六进制散列（MD5-like）
+uuid_compact_358,\b[0-9a-fA-F]{32}\b,5aa0f4df26c1afd63ec5c3462a945e67,无横线 UUID 表示
+short_hex_359,\b[0-9a-fA-F]{8}\b,d974ba4a,短 8 字节十六进制标识
+ipv4_360,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.105.60,IPv4 地址
+datetime_iso_361,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-26T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_362,"\bCODE362[:\-]?\d{4,8}\b",CODE362-1234,通用序列号样式
+email_variation_363,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user363@example.co,一般邮箱格式（短域）
+mobile_dash_364,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1364-1234,中国大陆手机号带短横分隔
+token_base64_365,"[A-Za-z0-9_-]{20,300}",997e60cb49fd67ee8a9632395bfcb4f89be4,看起来像长令牌/密钥的字母数字串
+order_no_366,"\bORD[-_ ]?\d{6,12}\b",ORD-100366,订单号（ORD 前缀）
+invoice_no_367,"\bINV[-_ ]?\d{6,12}\b",INV200367,发票号码（INV 前缀）
+hex_32_368,\b[0-9a-fA-F]{32}\b,dd2243569b6a3029205cffee23bba970,32 字符十六进制散列（MD5-like）
+uuid_compact_369,\b[0-9a-fA-F]{32}\b,67fb2932519727667758e676e35f9de4,无横线 UUID 表示
+short_hex_370,\b[0-9a-fA-F]{8}\b,e95b832c,短 8 字节十六进制标识
+ipv4_371,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.116.93,IPv4 地址
+datetime_iso_372,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-09T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_373,"\bCODE373[:\-]?\d{4,8}\b",CODE373-1234,通用序列号样式
+email_variation_374,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user374@example.co,一般邮箱格式（短域）
+mobile_dash_375,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1375-1234,中国大陆手机号带短横分隔
+token_base64_376,"[A-Za-z0-9_-]{20,300}",803013960d2a414011aac509e94ba2831429,看起来像长令牌/密钥的字母数字串
+order_no_377,"\bORD[-_ ]?\d{6,12}\b",ORD-100377,订单号（ORD 前缀）
+invoice_no_378,"\bINV[-_ ]?\d{6,12}\b",INV200378,发票号码（INV 前缀）
+hex_32_379,\b[0-9a-fA-F]{32}\b,0d86b91071f3f8ee8202e181a24b3bd2,32 字符十六进制散列（MD5-like）
+uuid_compact_380,\b[0-9a-fA-F]{32}\b,ec852de6502af8228084ada0ca2c5b50,无横线 UUID 表示
+short_hex_381,\b[0-9a-fA-F]{8}\b,4a0091b9,短 8 字节十六进制标识
+ipv4_382,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.127.126,IPv4 地址
+datetime_iso_383,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-20T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_384,"\bCODE384[:\-]?\d{4,8}\b",CODE384-1234,通用序列号样式
+email_variation_385,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user385@example.co,一般邮箱格式（短域）
+mobile_dash_386,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1386-1234,中国大陆手机号带短横分隔
+token_base64_387,"[A-Za-z0-9_-]{20,300}",1099a8a279d5670a34cb09d740ade7d78efb,看起来像长令牌/密钥的字母数字串
+order_no_388,"\bORD[-_ ]?\d{6,12}\b",ORD-100388,订单号（ORD 前缀）
+invoice_no_389,"\bINV[-_ ]?\d{6,12}\b",INV200389,发票号码（INV 前缀）
+hex_32_390,\b[0-9a-fA-F]{32}\b,5cfe3273c53243a3c9f1b7768fef21ca,32 字符十六进制散列（MD5-like）
+uuid_compact_391,\b[0-9a-fA-F]{32}\b,bf58e25f46a3661e6fd3298df53f6418,无横线 UUID 表示
+short_hex_392,\b[0-9a-fA-F]{8}\b,01dae32b,短 8 字节十六进制标识
+ipv4_393,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.138.159,IPv4 地址
+datetime_iso_394,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-03T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_395,"\bCODE395[:\-]?\d{4,8}\b",CODE395-1234,通用序列号样式
+email_variation_396,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user396@example.co,一般邮箱格式（短域）
+mobile_dash_397,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1397-1234,中国大陆手机号带短横分隔
+token_base64_398,"[A-Za-z0-9_-]{20,300}",319f9cc31e62b41588b262160d14ba37b7b1,看起来像长令牌/密钥的字母数字串
+order_no_399,"\bORD[-_ ]?\d{6,12}\b",ORD-100399,订单号（ORD 前缀）
+invoice_no_400,"\bINV[-_ ]?\d{6,12}\b",INV200400,发票号码（INV 前缀）
+hex_32_401,\b[0-9a-fA-F]{32}\b,b3b8d86cbb23c1a68143d6022bd9ca1a,32 字符十六进制散列（MD5-like）
+uuid_compact_402,\b[0-9a-fA-F]{32}\b,d0b9e4dd607e2ddab02d783be12a0ae2,无横线 UUID 表示
+short_hex_403,\b[0-9a-fA-F]{8}\b,ab5a0ea0,短 8 字节十六进制标识
+ipv4_404,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.149.192,IPv4 地址
+datetime_iso_405,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-14T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_406,"\bCODE406[:\-]?\d{4,8}\b",CODE406-1234,通用序列号样式
+email_variation_407,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user407@example.co,一般邮箱格式（短域）
+mobile_dash_408,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1408-1234,中国大陆手机号带短横分隔
+token_base64_409,"[A-Za-z0-9_-]{20,300}",0da6798dbdd8caa3d0aa103e10f32095a96b,看起来像长令牌/密钥的字母数字串
+order_no_410,"\bORD[-_ ]?\d{6,12}\b",ORD-100410,订单号（ORD 前缀）
+invoice_no_411,"\bINV[-_ ]?\d{6,12}\b",INV200411,发票号码（INV 前缀）
+hex_32_412,\b[0-9a-fA-F]{32}\b,9a140d96a0da78a87a3fe2eb3e30f580,32 字符十六进制散列（MD5-like）
+uuid_compact_413,\b[0-9a-fA-F]{32}\b,92881a755589909515a5529e3dc20b59,无横线 UUID 表示
+short_hex_414,\b[0-9a-fA-F]{8}\b,b9532481,短 8 字节十六进制标识
+ipv4_415,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.160.225,IPv4 地址
+datetime_iso_416,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-25T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_417,"\bCODE417[:\-]?\d{4,8}\b",CODE417-1234,通用序列号样式
+email_variation_418,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user418@example.co,一般邮箱格式（短域）
+mobile_dash_419,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1419-1234,中国大陆手机号带短横分隔
+token_base64_420,"[A-Za-z0-9_-]{20,300}",b2f09424733a74b656fb70eeea95a31ab6f0,看起来像长令牌/密钥的字母数字串
+order_no_421,"\bORD[-_ ]?\d{6,12}\b",ORD-100421,订单号（ORD 前缀）
+invoice_no_422,"\bINV[-_ ]?\d{6,12}\b",INV200422,发票号码（INV 前缀）
+hex_32_423,\b[0-9a-fA-F]{32}\b,8d986eb7e43d9f37542d1771a166e61e,32 字符十六进制散列（MD5-like）
+uuid_compact_424,\b[0-9a-fA-F]{32}\b,ffb5cd9595faf9b988ce100d3d8f7c8e,无横线 UUID 表示
+short_hex_425,\b[0-9a-fA-F]{8}\b,500b6ddb,短 8 字节十六进制标识
+ipv4_426,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.171.3,IPv4 地址
+datetime_iso_427,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-08T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_428,"\bCODE428[:\-]?\d{4,8}\b",CODE428-1234,通用序列号样式
+email_variation_429,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user429@example.co,一般邮箱格式（短域）
+mobile_dash_430,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1430-1234,中国大陆手机号带短横分隔
+token_base64_431,"[A-Za-z0-9_-]{20,300}",cb093759bdff80743419e07efb4a9eec6636,看起来像长令牌/密钥的字母数字串
+order_no_432,"\bORD[-_ ]?\d{6,12}\b",ORD-100432,订单号（ORD 前缀）
+invoice_no_433,"\bINV[-_ ]?\d{6,12}\b",INV200433,发票号码（INV 前缀）
+hex_32_434,\b[0-9a-fA-F]{32}\b,99e0550fa4175fb7a85837c319ea183d,32 字符十六进制散列（MD5-like）
+uuid_compact_435,\b[0-9a-fA-F]{32}\b,8d598e552597cefc9cd5ba07a9b7f880,无横线 UUID 表示
+short_hex_436,\b[0-9a-fA-F]{8}\b,e429106d,短 8 字节十六进制标识
+ipv4_437,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.182.36,IPv4 地址
+datetime_iso_438,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-19T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_439,"\bCODE439[:\-]?\d{4,8}\b",CODE439-1234,通用序列号样式
+email_variation_440,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user440@example.co,一般邮箱格式（短域）
+mobile_dash_441,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1441-1234,中国大陆手机号带短横分隔
+token_base64_442,"[A-Za-z0-9_-]{20,300}",d66932ceaf0b3b26bb360998e05375d4c203,看起来像长令牌/密钥的字母数字串
+order_no_443,"\bORD[-_ ]?\d{6,12}\b",ORD-100443,订单号（ORD 前缀）
+invoice_no_444,"\bINV[-_ ]?\d{6,12}\b",INV200444,发票号码（INV 前缀）
+hex_32_445,\b[0-9a-fA-F]{32}\b,d837b5b5413119ee776bff67899f8300,32 字符十六进制散列（MD5-like）
+uuid_compact_446,\b[0-9a-fA-F]{32}\b,a6f274ffc4e4f4b4b489b005491d36c1,无横线 UUID 表示
+short_hex_447,\b[0-9a-fA-F]{8}\b,e72cfeff,短 8 字节十六进制标识
+ipv4_448,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.193.69,IPv4 地址
+datetime_iso_449,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-02T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_450,"\bCODE450[:\-]?\d{4,8}\b",CODE450-1234,通用序列号样式
+email_variation_451,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user451@example.co,一般邮箱格式（短域）
+mobile_dash_452,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1452-1234,中国大陆手机号带短横分隔
+token_base64_453,"[A-Za-z0-9_-]{20,300}",7c2b4ff713fef1f46989f76a6f50983d49ae,看起来像长令牌/密钥的字母数字串
+order_no_454,"\bORD[-_ ]?\d{6,12}\b",ORD-100454,订单号（ORD 前缀）
+invoice_no_455,"\bINV[-_ ]?\d{6,12}\b",INV200455,发票号码（INV 前缀）
+hex_32_456,\b[0-9a-fA-F]{32}\b,0054328b5df1bf8ae4ed92a9183796ab,32 字符十六进制散列（MD5-like）
+uuid_compact_457,\b[0-9a-fA-F]{32}\b,fbdde71ad0a961ec9c586fe5b971f7d1,无横线 UUID 表示
+short_hex_458,\b[0-9a-fA-F]{8}\b,85624130,短 8 字节十六进制标识
+ipv4_459,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.204.102,IPv4 地址
+datetime_iso_460,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-13T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_461,"\bCODE461[:\-]?\d{4,8}\b",CODE461-1234,通用序列号样式
+email_variation_462,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user462@example.co,一般邮箱格式（短域）
+mobile_dash_463,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1463-1234,中国大陆手机号带短横分隔
+token_base64_464,"[A-Za-z0-9_-]{20,300}",ecafb13efc50c0006e635ce28549ddbbf1b6,看起来像长令牌/密钥的字母数字串
+order_no_465,"\bORD[-_ ]?\d{6,12}\b",ORD-100465,订单号（ORD 前缀）
+invoice_no_466,"\bINV[-_ ]?\d{6,12}\b",INV200466,发票号码（INV 前缀）
+hex_32_467,\b[0-9a-fA-F]{32}\b,24bf55ef996503f18578918ff09c393a,32 字符十六进制散列（MD5-like）
+uuid_compact_468,\b[0-9a-fA-F]{32}\b,c513e3226f3d77c9d969be434cf26696,无横线 UUID 表示
+short_hex_469,\b[0-9a-fA-F]{8}\b,9111c73a,短 8 字节十六进制标识
+ipv4_470,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.215.135,IPv4 地址
+datetime_iso_471,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-24T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_472,"\bCODE472[:\-]?\d{4,8}\b",CODE472-1234,通用序列号样式
+email_variation_473,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user473@example.co,一般邮箱格式（短域）
+mobile_dash_474,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1474-1234,中国大陆手机号带短横分隔
+token_base64_475,"[A-Za-z0-9_-]{20,300}",e434c121766d026393fd1a47fb6cacab5ef0,看起来像长令牌/密钥的字母数字串
+order_no_476,"\bORD[-_ ]?\d{6,12}\b",ORD-100476,订单号（ORD 前缀）
+invoice_no_477,"\bINV[-_ ]?\d{6,12}\b",INV200477,发票号码（INV 前缀）
+hex_32_478,\b[0-9a-fA-F]{32}\b,17f275cd46121a6b2bc064da12c63001,32 字符十六进制散列（MD5-like）
+uuid_compact_479,\b[0-9a-fA-F]{32}\b,1a89c745e4b1f605230ad8176f7dab97,无横线 UUID 表示
+short_hex_480,\b[0-9a-fA-F]{8}\b,64a64662,短 8 字节十六进制标识
+ipv4_481,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.226.168,IPv4 地址
+datetime_iso_482,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-07T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_483,"\bCODE483[:\-]?\d{4,8}\b",CODE483-1234,通用序列号样式
+email_variation_484,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user484@example.co,一般邮箱格式（短域）
+mobile_dash_485,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1485-1234,中国大陆手机号带短横分隔
+token_base64_486,"[A-Za-z0-9_-]{20,300}",1d8f9db0f64cd586a77d8d1f5d43cd6e7d04,看起来像长令牌/密钥的字母数字串
+order_no_487,"\bORD[-_ ]?\d{6,12}\b",ORD-100487,订单号（ORD 前缀）
+invoice_no_488,"\bINV[-_ ]?\d{6,12}\b",INV200488,发票号码（INV 前缀）
+hex_32_489,\b[0-9a-fA-F]{32}\b,e546f5d677a76318d3ed08e4a85d2e79,32 字符十六进制散列（MD5-like）
+uuid_compact_490,\b[0-9a-fA-F]{32}\b,309dafd7c0375af8c09d3aed18c374a2,无横线 UUID 表示
+short_hex_491,\b[0-9a-fA-F]{8}\b,0ef62b07,短 8 字节十六进制标识
+ipv4_492,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.237.201,IPv4 地址
+datetime_iso_493,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-18T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_494,"\bCODE494[:\-]?\d{4,8}\b",CODE494-1234,通用序列号样式
+email_variation_495,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user495@example.co,一般邮箱格式（短域）
+mobile_dash_496,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1496-1234,中国大陆手机号带短横分隔
+token_base64_497,"[A-Za-z0-9_-]{20,300}",64ac342175eb96cc838b48ef6e37f50e7380,看起来像长令牌/密钥的字母数字串
+order_no_498,"\bORD[-_ ]?\d{6,12}\b",ORD-100498,订单号（ORD 前缀）
+invoice_no_499,"\bINV[-_ ]?\d{6,12}\b",INV200499,发票号码（INV 前缀）
+hex_32_500,\b[0-9a-fA-F]{32}\b,679c712641a3bc409033b2aeb4ea6567,32 字符十六进制散列（MD5-like）
+uuid_compact_501,\b[0-9a-fA-F]{32}\b,a8c302e5fb1cf6252038e1161ab13fe1,无横线 UUID 表示
+short_hex_502,\b[0-9a-fA-F]{8}\b,4cb509f7,短 8 字节十六进制标识
+ipv4_503,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.248.234,IPv4 地址
+datetime_iso_504,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-01T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_505,"\bCODE505[:\-]?\d{4,8}\b",CODE505-1234,通用序列号样式
+email_variation_506,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user506@example.co,一般邮箱格式（短域）
+mobile_dash_507,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1507-1234,中国大陆手机号带短横分隔
+token_base64_508,"[A-Za-z0-9_-]{20,300}",d29cff3a9bd5e07b8e5975c362a78654389b,看起来像长令牌/密钥的字母数字串
+order_no_509,"\bORD[-_ ]?\d{6,12}\b",ORD-100509,订单号（ORD 前缀）
+invoice_no_510,"\bINV[-_ ]?\d{6,12}\b",INV200510,发票号码（INV 前缀）
+hex_32_511,\b[0-9a-fA-F]{32}\b,8bda7846187eaf0a02454b293bcc2238,32 字符十六进制散列（MD5-like）
+uuid_compact_512,\b[0-9a-fA-F]{32}\b,b779b6cc3d38b101d792993c293df74c,无横线 UUID 表示
+short_hex_513,\b[0-9a-fA-F]{8}\b,508d7d76,短 8 字节十六进制标识
+ipv4_514,"\b(?:\d{1,3}\.){3}\d{1,3}\b",10.0.4.12,IPv4 地址
+datetime_iso_515,\b\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z\b,2023-08-12T12:00:00Z,ISO8601 UTC 时间戳
+generic_code_516,"\bCODE516[:\-]?\d{4,8}\b",CODE516-1234,通用序列号样式
+email_variation_517,"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,4}",user517@example.co,一般邮箱格式（短域）
+mobile_dash_518,\b1[3-9]\d{2}[-\s]?\d{4}[-\s]?\d{4}\b,138-1518-1234,中国大陆手机号带短横分隔
+token_base64_519,"[A-Za-z0-9_-]{20,300}",f64b5d0e10d7df8ae7ed9147ed43e02c6353,看起来像长令牌/密钥的字母数字串
+order_no_520,"\bORD[-_ ]?\d{6,12}\b",ORD-100520,订单号（ORD 前缀）
+iban,"\b[A-Z]{2}\d{2}[A-Z0-9]{4,30}\b",GB29NWBK60161331926819,IBAN 国际银行账号

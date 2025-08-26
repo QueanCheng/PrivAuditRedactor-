@@ -1,0 +1,7 @@
+Manual review checklist:
+- Verify regex accuracy against expected samples.
+- Spot-check random 10 rules for false positives.
+- Prepare narrative explanations for top 50 high-risk rules.
+
+Reviewer: (enter reviewer name)
+Date: 2025-08-26T04:49:18.381890 UTC
